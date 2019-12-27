@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Кэшированное время{% endblock %}
+
+{% block main_content %}
+  <h1>Кэшированное время</h1>
+  <ul>
+
+    <li>Время и дата кэширования: {{time.cache}}</li>
+    <li>Время следующего обновления: {{time.refresh}}</li>
+
+  </ul>
+{% endblock %}
