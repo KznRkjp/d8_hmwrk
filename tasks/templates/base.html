@@ -21,7 +21,7 @@
               <p>Login: {{ user.username }}</p>
 
               <i class="fas fa-clipboard-list"></i>&nbsp;<a href="{% url "tasks:list" %}">задачи</a></br>
-              <i class="fas fa-tags"></i>&nbsp;<a href="{% url "tasks:index" %}">тэги</a></br>
+              <i class="fas fa-tags"></i>&nbsp;<a href="{% url "tasks:index" %}">тэги и приоритеты</a></br>
             {% endif %}
 
       <i class="fas fa-cog"></i>&nbsp;<a href='{% url 'tasks:testcache' %}'>кэш</a> </br>
