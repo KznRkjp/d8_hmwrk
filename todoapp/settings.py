@@ -1,4 +1,4 @@
-import django_heroku
+#import django_heroku
 import os
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -63,7 +63,7 @@ DATABASES = {
 LANGUAGE_CODE = 'ru-RU'
 
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 
 def get_cache():
@@ -112,6 +112,10 @@ def get_cache():
 CACHES = {
     'default': {
         'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
-        'LOCATION': os.environ['LOCATION'],
+        'LOCATION': '85.175.5.147:20351',
+        #'LOCATION': os.environ['LOCATION'],
     }
 }
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+STATIC_URL = '/static/'
