@@ -7,7 +7,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'please-set-secret-key-through-env')
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.79']
+ALLOWED_HOSTS = ['192.168.1.79','85.175.5.147']
 
 
 INSTALLED_APPS = [
